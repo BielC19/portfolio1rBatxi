@@ -1,8 +1,7 @@
-export function resselect() {
-    return alert("Has de seleccionar algo siusplau.")
+function boto() {
+    var contingut = document.createElement('input');
+    alert("S'ha  creat l'input")
 }
-export function boto() {
-    var contingut = document.createElement('input')
-    
-
+function resselect() {
+    return alert("Has de seleccionar algo siusplau.");
 }

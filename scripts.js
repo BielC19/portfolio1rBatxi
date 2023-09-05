@@ -1,20 +1,30 @@
-import {resselect, boto}from './funcionss'
+//funcions
+function boto() {
+  var noubto = document.createElement('button');
+  noubto.innerHTML='El teu boto'; //amb aixoafageixes text dints del boto pero tmb ho pots fer amb noubto.textcontent = 'el q vuilguis
+  noubto.setAttribute("src", "./scripts.js");
+  document.body.appendChild(noubto);
+
+}
+function resselect() {
+  return alert("Has de seleccionar algo siusplau.");
+}
+
+
+
+
+
 var seleccionant = document.getElementById('selecciotipius');
-seleccionant.addEventListener('select', function() {
+seleccionant.addEventListener('change', function() {
   var infoseleccio = seleccionant.options[seleccionant.selectedIndex].value;
   if (infoseleccio === '') {
+    console.log("error aixo es del de res");
     resselect();
   }
   else if (infoseleccio === 'boto') {
     boto();
   }
 });
-
-
-
-
-
-
 
 
 
