@@ -1,13 +1,14 @@
 //funcions
 function boto() {
   var noubto = document.createElement('button');
-  noubto.innerHTML='El teu boto'; //amb aixoafageixes text dints del boto pero tmb ho pots fer amb noubto.textcontent = 'el q vuilguis
+  noubto.innerHTML='El teu boto'; //amb aixo afageixes text dints del boto pero tmb ho pots fer amb noubto.textcontent = 'el q vuilguis
   noubto.setAttribute("src", "./scripts.js");
   document.body.appendChild(noubto);
 
 }
 function resselect() {
   return alert("Has de seleccionar algo siusplau.");
+  
 }
 
 
@@ -53,7 +54,7 @@ elbuto.addEventListener('click', function() {
     var opSelect = select.options[totesOpcions].value;
   
   if (opSelect === 'color') {
-    nouele.style.color = 'purple';
+    mesbtns.style.color = 'purple';
   }
   else if (opSelect === "size") {
     nouele.style.fontSize = '40px';

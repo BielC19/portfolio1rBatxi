@@ -29,8 +29,23 @@
             <option value="input">input</option>
           </select>
         </section>
-        <script src="scripts.js" type="text/javascript"></script>
-    </body>
+        <input type="aa" placeholder="prova_value" id="prova_value">
+        <input type="button" value="aqui" id="prova_butto">
+        <script 
+        src="scripts.js" type="text/javascript"></script>
+        <script>
+        var bto = document.getElementById('prova_butto')
+        var valuer = document.getElementById('prova_value').value;
+        bto.addEventListener('click', function () {
+          if (valuer==='aaaa') {
+            alert('aaaaaaaaaaaaaaaaaaaaaaaaaaaa\n aaaaaRRR')
+          }
+          else {
+            alert('burruuuu')
+          }
+        })
+        </script>
+  </body>
 </html>
         <!--
         <script>
